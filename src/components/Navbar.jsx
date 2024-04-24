@@ -5,7 +5,6 @@ import navlogo from '../assets/images/navlogo.png'; // Import the image
 function Navbar() {
 
 
-
   return (
     <div id='mainNavbar'>
       <div id='leftElements'>
