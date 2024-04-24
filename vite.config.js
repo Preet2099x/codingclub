@@ -1,7 +1,15 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  // other Vite config options
+
+  build: {
+    assetsDir: 'assets', // Directory where assets will be emitted
+    rollupOptions: {
+      output: {
+        assetFileNames: '[name].[ext]' // Keep original file names for assets
+      }
+    }
+  }
+});
+

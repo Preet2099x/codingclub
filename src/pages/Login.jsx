@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 import Navbar from '../components/Navbar';
+import image1 from '../assets/images/image1.png'; // Import the image
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -41,7 +42,7 @@ function Login() {
           <p id='smallLink'>forgot? <a href=''>click here</a></p>
         </div>
         <div id="rightContainer">
-          <img src='./src/assets/image1.png' alt="Image" />
+          <img src={image1} alt="Image" /> {/* Use imported image */}
         </div>
       </div>
     </>

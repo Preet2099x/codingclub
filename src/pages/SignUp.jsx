@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './SignUp.css';
 import Navbar from '../components/Navbar';
+import image1 from '../assets/images/image1.png'; // import the image
 
 function SignUp() {
   const [firstName, setFirstName] = useState('');
@@ -30,7 +31,7 @@ function SignUp() {
   };
 
   const handleSignUp = () => {
-    // Handle sign-up logic here
+    // Handle sign-up logic
   };
 
   return (
@@ -74,7 +75,7 @@ function SignUp() {
           <button onClick={handleSignUp}>SIGN-UP</button>
         </div>
         <div id="rightContainer">
-          <img src='./src/assets/image1.png' alt="Image" />
+          <img src={image1} alt="Image" /> {/* Use imported image */}
         </div>
       </div>
     </>

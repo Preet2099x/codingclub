@@ -1,30 +1,25 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
+import navlogo from '../assets/images/navlogo.png'; // Import the image
 
 function Navbar() {
-  const [count, setCount] = useState(0);
 
-  const handleSignUp = () => {
-    
-    console.log('Sign Up clicked');
-  };
-
-  const handleLogin = () => {
-    console.log('Login clicked');
-  };
 
   return (
     <div id='mainNavbar'>
       <div id='leftElements'>
-        <img src="./src/assets/navlogo.png" alt="image" />
+        <img src={navlogo} alt="Qezee" />
         <p>Qezee</p>
       </div>
       <div id='rightElements'>
-        <button onClick={handleLogin}>LOGIN</button>
-        <button onClick={handleSignUp}>SIGN-UP</button>
+        <button>LOGIN</button>
+        <button>SIGN-UP</button>
       </div>
     </div>
   );
 }
 
 export default Navbar;
+
+
