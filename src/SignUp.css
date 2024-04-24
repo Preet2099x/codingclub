@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./src/assets/MyFont-Regular.otf') format('opentype');
+  }
+  
+  #mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MyFont', sans-serif;
+  }
+  
+  #leftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px; 
+    flex: 1;
+    margin-left: 30px;
+  
+  }
+  
+  #leftContainer input {
+    margin-bottom: 30px; 
+    padding: 15px; 
+    width: 400px; 
+    background-color: #EAF0F1;
+    color: #7B8788;
+    font-size: 24px; 
+    font-family: 'MyFont', sans-serif; 
+    border-radius: 10px; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 2px 4px rgba(1, 1, 1, 0.3); 
+  }
+  
+  #leftContainer input::placeholder {
+    font-family: 'MyFont', sans-serif;
+  }
+  
+  #leftContainer p {
+    color: #4834DF;
+    font-size: 40px; 
+    margin-bottom: 20px; 
+  }
+  
+  #nameField {
+    display: flex;
+    margin-left: 72px;
+    margin-right: 39px; 
+  }
+  
+  #nameField input {
+    width: 170px; 
+    margin-right: 29px; 
+  }
+  
+  #rightContainer {
+    padding: 100px; 
+    margin-right: 60px;
+  }
+  
+  button {
+    width: 180px; 
+    padding: 15px; 
+    margin-top: 20px; 
+    font-size: x-large; 
+    background-color: #EEC213;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #D4B106; 
+  }
+  
+  
+  img {
+    height: 120%; 
+    width: 120%; 
+    display: block;
+    margin: 0 auto;
+  }
