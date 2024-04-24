@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Signup from './SignUp'
-import Navbar from './Navbar'
 
 import './index.css'
+import SignUp from './pages/SignUp'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Navbar/>
-    <Signup/>
-  </React.StrictMode>,
+    <SignUp/>
+  </React.StrictMode>
 )

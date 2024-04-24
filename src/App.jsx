@@ -1,17 +1,17 @@
+import { BrowserRouter, Routes,Route } from "react-router-dom";
+import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
 
-import './App.css'
-
-function App() {
-  
-    return (
-        <div id='mainContainer'>
-            <div id='leftElements'></div>
-            <div id='rightElements'>
-            <button onClick={handleSignUp}>LOGIN</button>
-            <button onClick={handleSignUp}>SIGN-UP</button>
-            </div>
+export default function App() {
+    return(
+        <div>
+            <BrowserRouter>
+            <Routes>
+                <Route index element={<SignUp/>}/>
+                <Route path ="/SignUp" element ={<SignUp/>}/>
+                <Route path ="/Login" element ={<Login/>}/>
+            </Routes>
+            </BrowserRouter>
         </div>
     )
-  }
-  
-  export default App
+}

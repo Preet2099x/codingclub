@@ -5,12 +5,11 @@ function Navbar() {
   const [count, setCount] = useState(0);
 
   const handleSignUp = () => {
-    // Functionality for sign up
+    
     console.log('Sign Up clicked');
   };
 
   const handleLogin = () => {
-    // Functionality for login
     console.log('Login clicked');
   };
 

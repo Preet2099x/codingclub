@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./public/MyFont-Regular.otf') format('opentype');
+}
+
+#mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'MyFont', sans-serif;
+  margin-top: -85px;
+}
+
+#leftContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px; 
+  flex: 1;
+  margin-left: 30px;
+
+}
+
+#leftContainer input {
+  margin-bottom: 30px; 
+  padding: 15px; 
+  width: 400px; 
+  background-color: #EAF0F1;
+  color: #7B8788;
+  font-size: 24px; 
+  font-family: 'MyFont', sans-serif; 
+  border-radius: 10px; 
+  border: 1px solid #ccc; 
+  box-shadow: 0 2px 4px rgba(1, 1, 1, 0.3); 
+}
+
+#leftContainer input::placeholder {
+  font-family: 'MyFont', sans-serif;
+}
+
+#leftContainer #heading {
+  color: #4834DF;
+  font-size: 35px; 
+  margin-bottom: 20px; 
+}
+
+
+#rightContainer {
+  padding: 100px; 
+  margin-right: 60px;
+}
+
+button {
+  width: 180px; 
+  padding: 15px; 
+  margin-top: 20px; 
+  font-size: x-large; 
+  background-color: #EEC213;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #D4B106; 
+}
+
+#leftContainer #smallLink {
+  font-size: 18px; 
+  margin-top: 10px; 
+  color: black
+}
+
+#leftContainer #smallLink a {
+  color: blue; 
+  text-decoration: none;
+}
+
+#leftContainer #smallLink a:hover {
+  text-decoration: none;
+}
+
+
+img {
+  height: 120%; 
+  width: 120%; 
+  display: block;
+  margin: 0 auto;
+}
