@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
 import navlogo from '../assets/images/navlogo.png'; // Import the image
 
 function Navbar() {
+
 
 
   return (

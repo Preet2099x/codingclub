@@ -1,17 +1,34 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SignUp from "./pages/SignUp";
-import Login from "./pages/Login";
+import './App.css'
+import Navbar from './components/Navbar'
+import Login from './pages/Login'
+import SignUp from './pages/SignUp'
 
-export default function App() {
-    return(
-        <div>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<SignUp />} />
-                    <Route path="/SignUp" element={<SignUp />} />
-                    <Route path="/Login" element={<Login />} />
-                </Routes>
-            </BrowserRouter>
-        </div>
-    )
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <><Navbar /><SignUp/></>
+    },
+    {
+      path: "/login",
+      element: <><Navbar /><Login/></>
+    },
+    {
+      path: "/signup",
+      element: <><Navbar /><SignUp /></>
+    },
+  ])
+  return (
+    <>
+      
+      <RouterProvider router={router} />
+
+    </>
+  )
 }
+
+export default App
+
+

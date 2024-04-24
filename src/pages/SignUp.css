@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'MyFont';
-    src: url('./src/assets/MyFont-Regular.otf') format('opentype');
+  font-family: 'MyFont';
+  src: url('./src/assets/MyFont-Regular.otf') format('opentype');
   }
   
   #mainContainer {
