@@ -32,9 +32,10 @@ button {
     padding: 12px; 
     margin-top: 20px; 
     font-size: large; 
-    background-color: #EEC213;
+    background-color: #FAD02E;
     color: white;
     border: none;
+    font-weight: 600;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
     cursor: pointer;
